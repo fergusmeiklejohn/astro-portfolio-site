@@ -4,15 +4,6 @@ compatibility_date = "2025-01-15"
 # Pages-specific configuration
 pages_build_output_dir = "dist"
 
-[site]
-bucket = "./dist"
-
-[build]
-command = "npm run build"
-
-[[build.environment]]
-NODE_VERSION = "18"
-
 # Optional: Add environment variables if needed
 # [vars]
 # MY_VAR = "value"
