@@ -1,79 +1,101 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>Welcome to My Portfolio</h1>
-			<div class="hero-section">
-				<p class="intro">
-					Hi, I'm <strong>Alex Chen</strong> — a full-stack developer passionate about creating 
-					exceptional digital experiences. I specialize in building fast, scalable web applications 
-					using modern technologies.
-				</p>
-				<img src="/placeholder.svg" alt="Portfolio Hero" width="800" height="400" style="max-width: 100%; height: auto; margin: 2rem 0; border-radius: 8px;">
-			</div>
-			
-			<section class="highlights">
-				<h2>What I Bring to the Table</h2>
-				<div class="skills-grid">
-					<div class="skill-item">
-						<h3>Frontend Excellence</h3>
-						<p>Creating responsive, accessible interfaces with React, Vue, and Astro. 
-						Focus on performance and user experience.</p>
-					</div>
-					<div class="skill-item">
-						<h3>Backend Expertise</h3>
-						<p>Building robust APIs and services with Node.js and Python. 
-						Experience with microservices and serverless architectures.</p>
-					</div>
-					<div class="skill-item">
-						<h3>Cloud Solutions</h3>
-						<p>Deploying and scaling applications on AWS and Cloudflare. 
-						Infrastructure as code and CI/CD pipelines.</p>
-					</div>
-				</div>
-			</section>
+    <head>
+        <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    </head>
+    <body>
+        <Header />
+        <main>
+            <h1>Welcome to My Portfolio</h1>
+            <div class="hero-section">
+                <p class="intro">
+                    Hi, I'm <strong>Alex Chen</strong> — a full-stack developer passionate
+                    about creating exceptional digital experiences. I specialize
+                    in building fast, scalable web applications using modern technologies.
+                </p>
+                <img
+                    src="/placeholder.png"
+                    alt="Portfolio Hero"
+                    width="800"
+                    height="400"
+                    style="max-width: 100%; height: auto; margin: 2rem 0; border-radius: 8px;"
+                />
+            </div>
 
-			<section class="recent-work">
-				<h2>Featured Projects</h2>
-				<ul>
-					<li>
-						<strong>E-Commerce Platform:</strong> Built a high-performance online store handling 
-						100K+ daily visitors with sub-second load times.
-					</li>
-					<li>
-						<strong>Real-time Analytics Dashboard:</strong> Developed a WebSocket-based dashboard 
-						processing millions of events per day.
-					</li>
-					<li>
-						<strong>Progressive Web App:</strong> Created an offline-first PWA that increased 
-						mobile engagement by 200%.
-					</li>
-				</ul>
-			</section>
+            <section class="highlights">
+                <h2>What I Bring to the Table</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <h3>Frontend Excellence</h3>
+                        <p>
+                            Creating responsive, accessible interfaces with
+                            React, Vue, and Astro. Focus on performance and user
+                            experience.
+                        </p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Backend Expertise</h3>
+                        <p>
+                            Building robust APIs and services with Node.js and
+                            Python. Experience with microservices and serverless
+                            architectures.
+                        </p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Cloud Solutions</h3>
+                        <p>
+                            Deploying and scaling applications on AWS and
+                            Cloudflare. Infrastructure as code and CI/CD
+                            pipelines.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-			<section class="cta">
-				<h2>Let's Build Something Amazing</h2>
-				<p>
-					I'm always excited about new challenges and opportunities. Check out my 
-					<a href="/blog">blog posts</a> for technical insights, or visit the 
-					<a href="/about">about page</a> to learn more about my journey.
-				</p>
-				<p>
-					<strong>Currently available for freelance projects and consulting.</strong>
-				</p>
-			</section>
-		</main>
-		<Footer />
-	</body>
+            <section class="recent-work">
+                <h2>Featured Projects</h2>
+                <ul>
+                    <li>
+                        <strong>E-Commerce Platform:</strong> Built a high-performance
+                        online store handling 100K+ daily visitors with sub-second
+                        load times.
+                    </li>
+                    <li>
+                        <strong>Real-time Analytics Dashboard:</strong> Developed
+                        a WebSocket-based dashboard processing millions of events
+                        per day.
+                    </li>
+                    <li>
+                        <strong>Progressive Web App:</strong> Created an offline-first
+                        PWA that increased mobile engagement by 200%.
+                    </li>
+                </ul>
+            </section>
+
+            <section class="cta">
+                <h2>Let's Build Something Amazing</h2>
+                <p>
+                    I'm always excited about new challenges and opportunities.
+                    Check out my
+                    <a href="/blog">blog posts</a> for technical insights, or visit
+                    the
+                    <a href="/about">about page</a> to learn more about my journey.
+                </p>
+                <p>
+                    <strong
+                        >Currently available for freelance projects and
+                        consulting.</strong
+                    >
+                </p>
+            </section>
+        </main>
+        <Footer />
+    </body>
 </html>
